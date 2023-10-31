@@ -1,0 +1,83 @@
+/* DoctorSearch.css */
+.searchfull{
+    background-image: url('https://media.istockphoto.com/id/1297146235/photo/blue-chromosome-dna-and-gradually-glowing-flicker-light-matter-chemical-when-camera-moving.webp?b=1&s=170667a&w=0&k=20&c=exQXSk71T61mZ01CIqLgPSvYqmDfduPakUNw491s6zI=');
+    background-repeat:cover;
+   
+    background-size: 90% auto;
+
+}
+.additional-content {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    background-color: #fff;
+  }
+  .setbg{
+    background-color: #fff;
+  }
+  .additional-content2 {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    background-color: #dad8d8;
+  }
+  
+  .paragraph {
+    flex: 1; /* Expand to fill available space */
+  }
+  .paragraph2 {
+    flex: 1; /* Expand to fill available space */
+  }
+  
+  .image {
+    flex: 1; /* Expand to fill available space */
+    text-align: right; /* Align image to the right */
+    margin-right: 150px;
+    margin-top: 10px;
+  }
+  
+  /* Add any additional styles you need */
+  .paragraph h2{
+    font-size: 40px;
+    font-family: verdana;
+    color:#414146;
+    margin-left: 70px;
+  }
+  .paragraph h1{
+    font-size: 40px;
+    font-family: verdana;
+    color:#1414d4;
+    margin-left: 90px;
+  }
+  .paragraph h4{
+    font-size: 18px;
+    font-family: verdana;
+    color:#787887;
+    margin-left: 90px;
+  }
+  .paragraph2 h2{
+    font-size: 40px;
+    font-family: verdana;
+    color:#414146;
+    margin-left: 70px;
+  }
+  .paragraph2 h1{
+    font-size: 40px;
+    font-family: verdana;
+    color:#1414d4;
+    margin-left: 90px;
+  }
+  .paragraph2 h4{
+    font-size: 18px;
+    font-family: verdana;
+    color:#787887;
+    margin-left: 90px;
+  }
+  .image-container {
+    display: inline-block;
+    margin-right: 50px; /* Add spacing between image and name */
+    text-align: center; /* Center-align the image and name */
+  }
+  .newimage{
+    margin-left: 150px;
+    
+  }
+  

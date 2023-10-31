@@ -1,0 +1,29 @@
+/* App.css */
+.app {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display 3 doctors per row */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .doctor-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .doctor-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .doctor-details {
+    margin-top: 10px;
+  }
+  

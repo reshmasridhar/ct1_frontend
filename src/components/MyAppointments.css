@@ -1,0 +1,52 @@
+/* Define styles for the past, present, and upcoming appointment sections */
+
+/* Container for the appointment sections */
+.appointment-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Individual appointment section */
+  .appointment-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title for each section */
+  .appointment-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for appointment details */
+  .appointment-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Styling for each appointment item */
+  .appointment-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Additional styling for the "Past Appointments" section */
+  .past-appointments {
+    background-color: #f0f0f0;
+  }
+  
+  /* Additional styling for the "Present Appointments" section */
+  .present-appointments {
+    background-color: #d5f7e2;
+  }
+  
+  /* Additional styling for the "Upcoming Appointments" section */
+  .upcoming-appointments {
+    background-color: #e8e8e8;
+  }
+  

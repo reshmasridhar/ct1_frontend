@@ -1,0 +1,11 @@
+.homepage{
+  font-family: Arial, sans-serif;
+ background-image:url('https://media.istockphoto.com/id/1150170445/photo/blur-abstract-background-of-corridor-in-clean-hospital-blurred-view-of-aisle-in-office-with.jpg?s=612x612&w=0&k=20&c=shLqGSo6nuRktVbT-CVGAxG1A78Iub8krV7S0wYq5Vw=');
+ background-repeat: no-repeat ;
+ 
+ 
+ background-size: 1500px 800px;
+}
+.content h1{
+  font-size: 50px;
+}

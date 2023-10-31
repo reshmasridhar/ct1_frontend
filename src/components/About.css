@@ -1,0 +1,39 @@
+
+  
+  .approach-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+    /* Additional styles for the container */
+  }
+  
+  .approach-card {
+    border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 30%; /* Adjust the width to fit three cards in a row */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 400px; /* Set a fixed height for the cards */
+
+  /* Ensure images display at the same size */
+  overflow: hidden; /* Hide any overflow */
+  }
+  
+  .approach img {
+    max-width: 100%;
+  height: auto;
+  width: 50%; /* Set a specific width for the images */
+  display: block; /* Remove extra space below the image */
+  margin: 0 auto; /* Horizontally center the image */
+  }
+  
+  .approach h2 {
+    margin: 10px 0;
+  }
+  
+  .approach p {
+    margin: 10px 0;
+  }
+  

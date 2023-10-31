@@ -1,0 +1,898 @@
+
+
+
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* App.css */
+
+/* Apply basic styles to the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  /*background-image: url('F:\casetools lab\doctor-appointment-system\public\b4.jpg');*/ /* Replace with the actual path to your image */
+  background-size: cover; /* Adjust the image size to cover the entire viewport */
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+/* Style the header */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+
+.header-buttons {
+  margin-left: auto;
+  /*display: flex;
+  justify-content: flex-end;
+  gap: 10px;*/ /* Adjust the spacing between the buttons */
+}
+
+.login-button,
+.signup-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0782c0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #0056b3;
+}
+/* Style the dialog */
+.dialog {
+ /* background-color: #fff;*/
+  padding: 20px;
+  border-radius: 5px;
+  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);*/
+  text-align: center;
+  margin-top: 140px;
+}
+.dialog h1 {
+  font-size: 45px;
+}
+.dialog p {
+  font-size: 15px;
+  color:rgb(86, 86, 86)
+}
+/* Style the appointment button */
+.appointment-button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.appointment-button button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.appointment-button button:hover {
+  background-color: #45a049;
+}
+
+/* App.css */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.appointment-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+*{
+  margin:0;
+  box-sizing:border-box;
+  font-family:"CustomFont";
+
+}
+
+.page{
+  height:100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.cover{
+  background-color: #fff;
+  width: 30em;
+  height: 35em;
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-around;
+  margin-left: 700px;
+  margin-top: 100px;
+  
+}
+.alt-login{
+  width: 80%;
+  height:3em;
+  display:flex;
+  justify-content: space-around;
+}
+.alt-login div{
+  width: 45%;
+  height: 90%;
+  border-radius: 0.25em;
+  background-color: black;
+  background-position: center;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
+
+input {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.login-btn {
+    width: 40%;
+    height: 3em;
+    background-color: rgb(32, 177, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: 0.5%;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-popup {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: rgb(96, 135, 208);
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+.blue {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('C:\Users\ADMIN\Downloads\icons8-facebook-50.png');
+}
+/*about*/
+.about-1
+{
+  
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px;
+  background-color: #f0f0f0;
+}
+.ab-2{
+  color: #09196a;
+  font-size: xx-large;
+}
+.ab-3{
+  text-align: left;
+  
+  background-image:url('https://insurancepu.io/wp-content/uploads/2022/12/page-bg-3.jpg' ) ;
+ height :500px;
+ width:1400px;
+  background-repeat: no-repeat;
+  
+}
+.ab-3 h1{
+  margin-left: 200px;
+  font-size: 3em;
+  
+}
+.ab-3 p{
+  margin-left: 200px;
+  font-family:apparel;
+  font-size: x-large;
+}
+.ab-4{
+  text-align: center;
+  }
+  .header-logo{
+    align-items: center;
+    margin-left: auto;
+  }
+  .card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .service-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* To evenly distribute cards in each row */
+  }
+  
+  .service-card {
+    width: 30%; /* Adjust the width to fit 3 cards in a row with some spacing */
+    margin-bottom: 20px; /* Add margin for spacing between rows */
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .find-container {
+    padding-top: 30px;
+    width: 300px;
+    margin: auto;
+  }
+  .input-find {
+    padding: 5px 15px;
+    width: 300px;
+  }
+  
+  .user-list-find {
+    margin-top: 30px;
+  }
+  
+  .user-find {
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px;
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .user-id-find {
+    color: red;
+    margin-right: 20px;
+  }
+  
+  .user-name-find {
+    color: blue;
+  }
+  
+  .user-age-find {
+    margin-left: auto;
+  }
+
+  /* Styling for the search box */
+  
+  .search{
+    /*background-image:url('F:\casetools lab\doctor-appointment-system\public\docsearchbg.jpg') ;*/
+    
+    background-repeat: no-repeat;
+    /*background-color: #f0f0f0;*/
+    
+  }
+  .search h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .search-input{
+    
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+    
+  }
+  .search-input input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style for the search button */
+  .search-input button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .search input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    
+  }
+  .search button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .search button:hover {
+    background-color: #0056b3;
+  }
+  .doclist{
+    margin-top: 20px;
+  padding: 20px;
+  justify-content: center;
+  
+  
+  }
+  .doctor-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .select-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .select-button:hover {
+    background-color: #0056b3; /* Change the button color on hover */
+  }
+  
+  .doctor-item:hover {
+    background-color: #f0f0f0; /* Change the background color on hover */
+  }
+  
+  /* Styling for the doctor's name */
+  .doctor-name {
+    font-size: 18px;
+    margin-right: 100px;
+  }
+  .doclist h2 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .doclist ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .doclist li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .docprofile {
+   
+    text-align: left; /* Center-align text within the div */
+  margin-top: 20px;
+   /* Add margin for spacing *//* Add margin for spacing */
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .docprofile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+
+  .appform{
+    
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding for spacing inside the form container */
+    border: 1px solid #ccc; /* Add a border for visual separation (optional) */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .appform form {
+    margin-top: 20px;
+  }
+  .appform label {
+    font-weight: bold;
+  }
+  .appform input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .appform button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .appform button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .time-slots {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .time-slots button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #c9cccc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .time-slots button.selected {
+    background-color: #4caf50;
+  }
+  /* src/App.css */
+
+/* Styling for the confirmation modal overlay */
+.confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the confirmation modal */
+.confirmation-modal {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Styling for the confirmation content */
+.confirmation-content {
+  margin: 20px;
+}
+
+.confirmation-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the confirmation buttons */
+.confirmation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.confirmation-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.confirmation-buttons button:first-child {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.confirmation-buttons button:first-child:hover {
+  background-color: #45a049;
+}
+
+.confirmation-buttons button:last-child {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.confirmation-buttons button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+/* src/components/SignUpPage.css */
+
+.signup-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.user-type-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.user-type-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.user-type-buttons button.active {
+  background-color: #0056b3;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* BlogCard.css */
+.blog-card {
+  border: 1px solid #ccc;
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  width: calc(30% - 20px); /* Set card width (1/3 of the container) */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for the card */
+  transition: box-shadow 0.3s ease;
+  
+}
+.card-details {
+  flex-grow: 1; /* Expand to fill the remaining space */
+  padding: 20px; /* Add padding to the details section */
+}
+.author {
+  text-align: right; /* Align the author information to the left */
+  margin: 0; /* Remove default margin */
+}
+
+.date {
+  text-align: left; /* Align the date to the right */
+  margin: 0; /* Remove default margin */
+}
+.blog-cards-container {
+  display: flex; /* Use Flexbox */
+  justify-content: space-between; /* Distribute items evenly */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line if the container is not wide enough */
+}
+
+/* Adjust margin for each card for spacing */
+
+.blog-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-card h3 {
+  margin-top: 10px;
+}
+
+.blog-card a {
+  display: block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #007bff; /* Link color */
+
+}
+.card-image {
+  /* Set a fixed height for the card */
+  height: 200px; /* Adjust this value as needed */
+
+  /* Center the image vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-image img {
+  /* Ensure the image maintains its aspect ratio */
+  max-width: 110%; /* Make sure the image doesn't overflow the container */
+  max-height: 110%; /* Ensure the image doesn't exceed the card height */
+  transition: transform 0.3s ease;
+}
+
+
+
+.card-image:hover img {
+  transform: scale(1.1); /* Scale the image up by 10% on hover */
+}
+
+.testimonials-section {
+  background-color: #daebfe;
+  padding: 20px;
+}
+
+/* Customize carousel styles as needed */
+.carousel-root {
+  max-width: 800px; /* Set the maximum width of the carousel */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+.carousel-root .carousel .slider-wrapper .slider .slide {
+  background-color: #f7f7f7; /* Set your desired background color */
+  padding: 20px;
+  border-radius: 10px; /* Add curved edges to the slides */
+}
+
+/* Style the image size and alignment */
+.carousel-root .carousel .slider-wrapper .slider .slide img {
+  max-width: 100px; /* Adjust the maximum image width */
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+}
+.carousel-root .carousel .slider-wrapper .slider .slide {
+  background-color: #f7f7f7; /* Set your desired background color */
+  padding: 20px;
+  border-radius: 10px; /* Add curved edges to the slides */
+}
+
+/* Style the client image */
+.client-image img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 50%; /* Make the image round */
+  width: 80px; /* Set the desired image size */
+  height: 80px; /* Set the desired image size */
+  object-fit: cover; /* Maintain the image aspect ratio */
+  margin-bottom: 10px; /* Add spacing below the image */
+}
+
+/*Patient page*/
+/* PatientPage.css */
+.patient-page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Adjust the height as needed */
+}
+
+.patient-page-sidebar {
+  width: 250px;
+  background-color: #f5f2f2; /* Sidebar background color */
+  color: rgb(14, 12, 12);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-page-profile img {
+  width: 100px; /* Adjust the profile picture size */
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  
+}
+
+.patient-page-profile {
+  display: flex;
+  flex-direction: row; /* Display items in a row layout */
+  align-items: center; /* Vertically center items */
+}
+.patient-page-profile p {
+  /*text-align: center;
+  margin-top: 10px;*/
+  margin: 0;
+}
+.profile-info {
+  flex-grow: 1;
+  text-align: right; /* Align text to the right */
+}
+
+.patient-page-nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.patient-page-nav-links li {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patient-page-nav-links li:hover {
+  background-color: #fdfdfd; /* Highlight on hover */
+}
+
+.patient-page-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.logout-button {
+  background-color: #0073e6; /* Blue color for the button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px; /* Add spacing below the name */
+}
+.patient-page-nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.patient-page-nav-links li {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.patient-page-nav-links li:hover {
+  background-color: #0073e6; /* Blue color on hover */
+}
+
+.patient-page-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+/* Home.css */
+.home-page {
+  padding: 20px;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.appointment-summary {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-appointment,
+.past-appointments {
+  margin-top: 20px;
+}
+
+.upcoming-appointment h3,
+.past-appointments h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Add more styles as needed to enhance the appearance of the home page */
+
